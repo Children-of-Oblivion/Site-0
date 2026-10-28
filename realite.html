@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mesure et outils de la réalité | Site-0, Département de l'Irréalité</title>
+<meta name="description" content="Dossiers du Département de l'Irréalité et de NULL-Site-0, d'après le lore officiel du SCP Wiki. Projet de fans pour un serveur de roleplay francophone.">
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;800&family=Special+Elite&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="top">
+  <a class="marque" href="index.html"><img id="logo" src="logo.png" alt="Logo du Site-0" width="48" height="48"><span>Département de l'Irréalité<small>NULL-Site-0</small></span></a>
+  <span class="loc" aria-hidden="true">Localisation : <b id="loc-val">N/A</b></span>
+  <div class="outils">
+    <button class="btn-icone" id="btn-recherche" type="button" aria-label="Rechercher dans les dossiers">Rechercher</button>
+    <button class="btn-icone" id="theme" type="button">Mode sombre</button>
+    <button class="btn-icone burger" id="burger" type="button" aria-expanded="false" aria-controls="rail">Dossiers</button>
+  </div>
+</header>
+<div class="cadre">
+<nav class="rail" id="rail" aria-label="Classeur"><h2>Dossiers du Département</h2><ul class=""><li><a href="index.html">Hall d&#x27;accueil</a></li><li><a href="departement.html">Le Département</a></li><li><a href="site-0.html">Fiche NULL-Site-0</a></li><li><a href="sections.html">Sections du site</a></li><li><a href="personnel.html">Personnel</a></li><li><a href="instances.html">Instances 6208</a></li><li><a href="realite.html" aria-current="page">Mesure et outils</a></li><li><a href="archives.html">Archives</a></li><li><a href="chronologie.html">Chronologie</a></li><li><a href="lieux.html">Sites liés</a></li><li><a href="institutions.html">Services et départements</a></li><li><a href="glossaire.html">Glossaire</a></li></ul><h2>Hors roleplay</h2><ul class="hrp"><li><a href="hrp-accueil.html">Accueil HRP</a></li><li><a href="hrp-annonces.html">Annonces HRP</a></li><li><a href="hrp-reglement.html">Règlement</a></li><li><a href="hrp-credits.html">Crédits et licence</a></li></ul></nav>
+<main id="contenu" class="feuille">
+<h1>Mesure et outils de la réalité</h1><p class="cote">Humes, ancres, injection</p>
+
+<p class="chapeau">La Fondation mesure la réalité en humes. Le Département travaille là où la mesure est faible. Aucun relevé de hume n'a été publié pour Site-0.</p>
+
+<h2>Le hume</h2>
+<p>Le hume mesure la force ou la quantité de réalité dans une zone. Imaginez une couche de sable posée sur tout l'univers : en retirer fait baisser la réalité, en ajouter la fait monter. Le niveau de référence est de 1 hume.</p>
+<p>Deux univers de poche contiennent chacun des ancres de réalité de Scranton. Elles maintiennent la mesure à deux valeurs fixes, 100 et 0, auxquelles tous les relevés se rapportent. Le compteur de Kant ouvre deux portails vers ces univers et sert d'instrument de mesure local.</p>
+<p>Les relevés se notent <b>zone / individu</b> : la réalité de l'environnement, puis celle de la personne.</p>
+
+<div class="hume" id="hume" aria-live="polite">
+  <div class="hume-choix" role="group" aria-label="Relevés connus">
+    <button type="button" data-z="0" data-i="0" data-t="Référence basse. Fixée par les ancres de Scranton dans le premier univers de poche.">Référence basse</button>
+    <button type="button" data-z="100" data-i="100" data-t="Référence haute. Fixée par les ancres de Scranton dans le second univers de poche.">Référence haute</button>
+    <button type="button" data-z="75-80" data-i="130-150" data-t="Manipulateur de réalité de faible niveau. Les valeurs peuvent fluctuer, même chez des humains ordinaires.">Manipulateur faible</button>
+    <button type="button" data-z="40" data-i="300" data-t="Manipulateur puissant.">Manipulateur puissant</button>
+    <button type="button" data-z="30" data-i="500" data-t="Objet 239. Zone d'effet limitée à sa ligne de vue et à son imagination.">Objet 239</button>
+  </div>
+  <div class="hume-lecture">
+    <div class="jauge"><span>Zone</span><i><u id="hz"></u></i><b id="hzv">0</b></div>
+    <div class="jauge"><span>Individu</span><i><u id="hi"></u></i><b id="hiv">0</b></div>
+    <p id="ht">Choisissez un relevé.</p>
+  </div>
+</div>
+
+<h2>Outils de la Fondation</h2>
+<div class="tablewrap"><table class="reg "><thead><tr><th scope='col'>Outil</th><th scope='col'>Usage</th></tr></thead><tbody><tr><td>Ancre de réalité de Scranton</td><td>Maintient la réalité locale. Une version modifiée a été employée pour entrer dans une instance 6208. Des ancres sont déployées en nombre lors d'une crise.</td></tr><tr><td>Compteur de Kant</td><td>Mesure le hume. Employé pour détecter du personnel à l'intérieur d'une instance.</td></tr><tr><td>Ancrage de réalité portable</td><td>Lumière bleue. Fait disparaître une pièce apparue.</td></tr><tr><td>Surveillance Hume</td><td>Réseau de capteurs autour d'un site. Tombé en panne autour du port franc d'Esterberg.</td></tr><tr><td>Désignation « non anormale »</td><td>Procédure administrative : on déclare l'instance non anormale, puis on la verrouille.</td></tr></tbody></table></div>
+<h2>Procédés du Département</h2>
+<div class="tablewrap"><table class="reg "><thead><tr><th scope='col'>Procédé</th><th scope='col'>Description</th><th scope='col'>Coût</th></tr></thead><tbody><tr><td>Apparition de pièces</td><td>Bureaux, chambres, cellules meublés, avec plaques et badges.</td><td>Du personnel peut y être perdu.</td></tr><tr><td>Injection d'information</td><td>Le Département écrit directement dans la réalité pour augmenter sa présence.</td><td>Dommages d'intégrité, dégradation structurelle, perte de réalité subjective.</td></tr><tr><td>Déplacement contrôlé</td><td>Déplacer une réalité par injection étrangère.</td><td>Échoue sans sujet disponible, capable d'attention.</td></tr><tr><td>Témoin</td><td>Une personne intériorise l'information : elle devient effective.</td><td>Le témoin la porte.</td></tr><tr><td>Déplacement du Département</td><td>Des portes apparaissent et transportent tout le Département.</td><td>Alerte de classe ZK.</td></tr><tr><td>Transfert</td><td>Un formulaire signé John Doe déplace un employé d'un site à l'autre.</td><td>L'employé peut disparaître.</td></tr><tr><td>Bureau mobile</td><td>Le bureau d'Alex Thorley le déplace entre les sites, parfois d'un continent à l'autre.</td><td>Désorientation.</td></tr></tbody></table></div>
+<h2>Notions</h2>
+<dl class="gloss-court">
+ <dt>État d'irréalité</dt><dd>Condition du Département : presque inexistant, il agit sans être vu.</dd>
+ <dt>Perte de réalité subjective</dt><dd>Ce que subissent les agents du Département quand il doit intervenir.</dd>
+ <dt>Dommage d'intégrité</dt><dd>Coût mesurable de chaque injection d'information.</dd>
+ <dt>Scénario ZK « Fin de la Réalité »</dt><dd>Alerte maximale, déclarée lors de la crise d'Esterberg.</dd>
+ <dt>Voile</dt><dd>Zone isolée des anomalies spatiales.</dd>
+ <dt>Zone désunie</dt><dd>Zone qui repousse les anomalies. Concept proposé en 1989 par le Dr Sayen O'Riley, appliqué au parc d'État Mallard (Oklahoma).</dd>
+</dl>
+
+</main>
+</div>
+<footer class="pied"><div><span>Salle de réunion, 10h24. L'horloge n'avance pas.</span><span>Projet de fans, contenu sous licence CC BY-SA 3.0. <a href="hrp-credits.html">Crédits et licence</a></span></div></footer>
+<div class="recherche" id="recherche" role="dialog" aria-modal="true" aria-label="Recherche"><div class="recherche-boite"><input type="search" placeholder="Chercher dans les dossiers" aria-label="Chercher dans les dossiers" autocomplete="off"><ul></ul></div></div>
+<script src="config.js"></script>
+<script src="search-index.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chronologie | Site-0, Département de l'Irréalité</title>
+<meta name="description" content="Dossiers du Département de l'Irréalité et de NULL-Site-0, d'après le lore officiel du SCP Wiki. Projet de fans pour un serveur de roleplay francophone.">
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;800&family=Special+Elite&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="top">
+  <a class="marque" href="index.html"><img id="logo" src="logo.png" alt="Logo du Site-0" width="48" height="48"><span>Département de l'Irréalité<small>NULL-Site-0</small></span></a>
+  <span class="loc" aria-hidden="true">Localisation : <b id="loc-val">N/A</b></span>
+  <div class="outils">
+    <button class="btn-icone" id="btn-recherche" type="button" aria-label="Rechercher dans les dossiers">Rechercher</button>
+    <button class="btn-icone" id="theme" type="button">Mode sombre</button>
+    <button class="btn-icone burger" id="burger" type="button" aria-expanded="false" aria-controls="rail">Dossiers</button>
+  </div>
+</header>
+<div class="cadre">
+<nav class="rail" id="rail" aria-label="Classeur"><h2>Dossiers du Département</h2><ul class=""><li><a href="index.html">Hall d&#x27;accueil</a></li><li><a href="departement.html">Le Département</a></li><li><a href="site-0.html">Fiche NULL-Site-0</a></li><li><a href="sections.html">Sections du site</a></li><li><a href="personnel.html">Personnel</a></li><li><a href="instances.html">Instances 6208</a></li><li><a href="realite.html">Mesure et outils</a></li><li><a href="archives.html">Archives</a></li><li><a href="chronologie.html" aria-current="page">Chronologie</a></li><li><a href="lieux.html">Sites liés</a></li><li><a href="institutions.html">Services et départements</a></li><li><a href="glossaire.html">Glossaire</a></li></ul><h2>Hors roleplay</h2><ul class="hrp"><li><a href="hrp-accueil.html">Accueil HRP</a></li><li><a href="hrp-annonces.html">Annonces HRP</a></li><li><a href="hrp-reglement.html">Règlement</a></li><li><a href="hrp-credits.html">Crédits et licence</a></li></ul></nav>
+<main id="contenu" class="feuille">
+<h1>Chronologie</h1><p class="cote">Repères datés</p>
+
+<p class="chapeau">Les dossiers du Département sont presque tous non datés. Les repères ci-dessous sont les seuls que les registres donnent. Les dates sont classées, les autres événements suivent l'ordre du dossier.</p>
+<div class="filtres" role="group" aria-label="Filtrer la chronologie">
+ <button type="button" class="on" data-f="tous">Tout</button>
+ <button type="button" data-f="doc">Documents</button>
+ <button type="button" data-f="inc">Incidents</button>
+ <button type="button" data-f="site">Sites</button>
+</div>
+<ol class="chrono" id="chrono"><li data-type="doc"><time>16 août 2016</time><p>Une étiquette « Steve » est récupérée à Aspen (Colorado).</p></li>
+<li data-type="doc"><time>13 février 2021</time><p>Un ticket de cafétéria du Site-19 (un bagel, une bouteille d'eau) est versé aux dossiers.</p></li>
+<li data-type="inc"><time>30 novembre 2021</time><p>Jennifer Williams entre dans une instance 6208 avec un compteur de Kant et une ancre modifiée.</p></li>
+<li data-type="doc"><time>1er décembre 2021</time><p>Elle est transférée au Département à la demande de John Doe, Directeur du Site-0.</p></li>
+<li data-type="inc"><time>25 décembre 2022</time><p>Repas de Noël organisé par Alex Thorley pour ses collègues.</p></li>
+<li data-type="inc"><time>3 janvier 2023</time><p>Alex grave « Je suis Alex Thorley. J'existe. » dans une salle sous un restaurant de Teaneck, puis disparaît.</p></li>
+<li data-type="inc"><time>2024</time><p>Crise d'Esterberg. Le Département est déplacé à Site-120.</p></li>
+<li data-type="doc"><time>Date non indiquée</time><p>Orientation du Département, salle 72-D, Site-19.</p></li>
+<li data-type="doc"><time>Date non indiquée</time><p>Alex Thorley est convoqué par RAISA. Le dossier de Site-0 est supprimé.</p></li>
+<li data-type="inc"><time>Date non indiquée</time><p>Contention de l'étiquette « Steve » à Site-17. Première injection directe d'information.</p></li>
+<li data-type="site"><time>Date non indiquée</time><p>Un bureau apparaît à Alex Thorley. Transfert de Site-19 à Site-184.</p></li>
+<li data-type="doc"><time>Date non indiquée</time><p>Réunion Pataphysique et Irréalité. Reclassification de l'objet 6938.</p></li>
+<li data-type="site"><time>Date non indiquée</time><p>Fête organisée par la Fondation à « Site-Canada ». Alex y est resté dix minutes.</p></li></ol>
+
+</main>
+</div>
+<footer class="pied"><div><span>Salle de réunion, 10h24. L'horloge n'avance pas.</span><span>Projet de fans, contenu sous licence CC BY-SA 3.0. <a href="hrp-credits.html">Crédits et licence</a></span></div></footer>
+<div class="recherche" id="recherche" role="dialog" aria-modal="true" aria-label="Recherche"><div class="recherche-boite"><input type="search" placeholder="Chercher dans les dossiers" aria-label="Chercher dans les dossiers" autocomplete="off"><ul></ul></div></div>
+<script src="config.js"></script>
+<script src="search-index.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
